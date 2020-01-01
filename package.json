@@ -1,0 +1,26 @@
+{
+    "name": "browserifyp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "bundle.js",
+    "scripts": {
+        "build": "browserify src/index.ts -p [ tsify -p . ] > bundle.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bassaer/browserifyp.git"
+    },
+    "keywords": [],
+    "author": "Tsubasa Nakayama <app.nakayama@gmail.com> (https://bassaer.github.io/me/)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bassaer/browserifyp/issues"
+    },
+    "homepage": "https://github.com/bassaer/browserifyp#readme",
+    "devDependencies": {
+        "browserify": "^16.5.0",
+        "tsify": "^4.0.1",
+        "typescript": "^3.7.4"
+    },
+    "dependencies": {}
+}
