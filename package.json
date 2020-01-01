@@ -2,9 +2,10 @@
     "name": "browserifyp",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "bundle.js",
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "browserify": "browserify src/index.ts -p [ tsify -p . ] > bundle.js"
     },
     "repository": {
         "type": "git",
@@ -21,5 +22,6 @@
         "browserify": "^16.5.0",
         "tsify": "^4.0.1",
         "typescript": "^3.7.4"
-    }
+    },
+    "dependencies": {}
 }
