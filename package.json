@@ -4,7 +4,7 @@
     "description": "",
     "main": "bundle.js",
     "scripts": {
-        "build": "browserify src/index.ts -p [ tsify -p . ] > bundle.js"
+        "build": "browserify src/index.ts -p [ tsify -p . ] -o dist/bundle.js"
     },
     "repository": {
         "type": "git",
